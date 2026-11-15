@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniportfólio | Jeinne Prado</title>
+
+    <style>
+        :root {
+            --fundo: #ffe4ec;
+            --principal: #0000cd;
+            --destaque: #ffb6c1;
+            --texto: #00008b;
+            --cartao: #fff0f5;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--fundo);
+            color: var(--texto);
+            line-height: 1.65;
+        }
+
+        header {
+            text-align: center;
+            padding: 42px 20px 30px;
+            background: #ffc0cb;
+        }
+
+        h1, h2 {
+            color: var(--principal);
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        header img {
+            width: 210px;
+            height: 210px;
+            object-fit: cover;
+            object-position: center 35%;
+            border-radius: 50%;
+            border: 6px solid white;
+            box-shadow: 0 4px 16px #00000020;
+        }
+
+        main {
+            width: min(900px, 92%);
+            margin: 28px auto;
+        }
+
+        section {
+            background: var(--cartao);
+            padding: 22px 26px;
+            margin: 22px 0;
+            border-radius: 14px;
+            box-shadow: 0 3px 14px #583b2b12;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid #ffb6c1;
+            margin: 24px 0;
+        }
+
+        a {
+            color: #0000a8;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #4169e1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 14px;
+        }
+
+        th, td {
+            border: 1px solid #ffb6c1;
+            padding: 11px;
+            text-align: left;
+        }
+
+        th {
+            background: #ffc0cb;
+            color: #00008b;
+        }
+
+        tr:nth-child(even) {
+            background: #ffe4ec;
+        }
+
+        .musica {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        .aviso {
+            font-size: .9rem;
+            color: #191970;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            background: #ffc0cb;
+            color: #00008b;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 18px;
+            }
+
+            table {
+                font-size: .9rem;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Deixe foto-jeinne.jpeg na mesma pasta deste arquivo index.html -->
+        <img src="./foto-jeinne.jpeg" alt="Foto de perfil de Jeinne Prado">
+
+        <h1>Jeinne Prado</h1>
+        <p>Leitura, criatividade e aprendizado contínuo</p>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+
+            <p>
+                Olá! Meu nome é Jeinne Prado. Sou formada em Biblioteconomia pela
+                Universidade Federal de Pernambuco (UFPE), tenho especializações nas
+                áreas de Educação Ambiental e Sustentabilidade e Biblioteconomia e
+                Gestão de Bibliotecas Escolares, além de formação técnica em Design
+                de Interiores. Também concluí um MBA em Finanças com Ênfase em
+                Mercado de Capitais e atualmente estou cursando Ciências Contábeis.
+                Gosto de aprender coisas novas, explorar a criatividade e compartilhar
+                conhecimentos. Nos meus momentos livres, gosto de ler, escrever e
+                pintar em aquarela.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="favoritos">
+            <h2>Meus hobbies e coisas favoritas</h2>
+
+            <ul>
+                <li>Ler livros de fantasia, mistério e ficção.</li>
+                <li>Escrever e desenvolver ideias e histórias.</li>
+                <li>Pintar em aquarela.</li>
+                <li>Conhecer assuntos novos e aprender tecnologia.</li>
+                <li>Organizar livros e descobrir novas leituras.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="redes">
+            <h2>Onde me encontrar</h2>
+
+            <p>
+                Acompanhe meu perfil no Instagram:
+                <a href="https://www.instagram.com/jeinneprado/"
+                   target="_blank" rel="noopener noreferrer">@jeinneprado</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="musica">
+            <h2>Trilha sonora</h2>
+
+            <p>Uma música que escolhi para acompanhar este portfólio:</p>
+
+            <!-- Para incorporar um vídeo do YouTube, use /embed/ e o ID do vídeo. -->
+            <iframe class="musica"
+                src="https://www.youtube-nocookie.com/embed/WVe80iZtlYU?autoplay=1"
+                title="Música escolhida por Jeinne"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+
+            <p>
+                Se o vídeo não aparecer,
+                <a href="https://www.youtube.com/watch?v=WVe80iZtlYU"
+                   target="_blank" rel="noopener noreferrer">
+                    assista diretamente no YouTube
+                </a>.
+            </p>
+
+            <p class="aviso">
+                Alguns navegadores bloqueiam a reprodução automática. Nesse caso,
+                clique no botão de reprodução do vídeo.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="livros">
+            <h2>Alguns livros da minha lista</h2>
+
+            <p>
+                A leitura faz parte dos meus interesses. Aqui estão alguns títulos
+                que aparecem na minha lista de livros:
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Livro</th>
+                        <th>Autor(a)</th>
+                        <th>Gênero / tema</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr><td>O Nome do Vento</td><td>Patrick Rothfuss</td><td>Fantasia</td></tr>
+                    <tr><td>Orgulho e Preconceito</td><td>Jane Austen</td><td>Romance / clássico</td></tr>
+                    <tr><td>O Hobbit</td><td>J. R. R. Tolkien</td><td>Fantasia / aventura</td></tr>
+                    <tr><td>Deuses Americanos</td><td>Neil Gaiman</td><td>Fantasia</td></tr>
+                    <tr><td>O Código Da Vinci</td><td>Dan Brown</td><td>Suspense</td></tr>
+                    <tr><td>A Menina da Neve</td><td>Eowyn Ivey</td><td>Ficção</td></tr>
+                    <tr><td>Como Treinar o Seu Dragão</td><td>Cressida Cowell</td><td>Fantasia / aventura</td></tr>
+                    <tr><td>O Cão dos Baskervilles</td><td>Arthur Conan Doyle</td><td>Mistério</td></tr>
+                </tbody>
+            </table>
+
+            <p class="aviso">
+                A tabela é uma pequena seleção da lista de livros enviada junto
+                com a atividade. O arquivo TXT original também está na pasta.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Miniportfólio de Jeinne Prado · 2026</p>
+    </footer>
+</body>
+</html>
